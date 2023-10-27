@@ -11,7 +11,8 @@ try:
     if user_input.strip() == "":
         raise ValueError("Input cannot be blank")
     else:
-      print(pg(user_input))
+        user_length = int(user_input)
+        print(pg(user_length))
 
 except ValueError as e:
     print("Error:", e)
